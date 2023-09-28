@@ -1,0 +1,223 @@
+<!-- 
+*******************************************************
+List HTML Elemets 
+-------------------------------------------------------
+01-     A Tag <a> – Anchor
+02-     OL Tag <ol> – Ordered List
+03-     UL Tag <ul> – Unordered List
+04-     LI Tag <li> – List Item
+05-     DL Tag <dl> – Definition/ Description List
+06-     DT Tag <dt> – Data Term
+07-     DD Tag <dd> – Data Definition 
+08-     MENU Tag <menu> (Mozilla Firefox Only)
+09-     MENUITEM Tag <menuitem> (Mozilla Firefox Only)
+*******************************************************
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List HTML Elements</title>
+  </head>
+  <body>
+    <!-- ######################################################### -->
+    <!-- Anchor -->
+    <!-- ######################################################### -->
+
+    <!-- External HyperLinks -->
+    <a> Click here for my profile </a>
+
+    <a href="https://lahore.comsats.edu.pk/Employees/320">
+      Click here for my profile
+    </a>
+
+    <a href="https://www.google.com">Google Page</a>
+
+    <br />
+    <a href="https://www.google.com" target="_self"
+      >Google Page with default target</a
+    >
+    <a href="https://www.comsats.edu.pk" target="_blank">COMSATS Website</a>
+    <a href="https://www.tinkercad.com/" target="_parent">Tinkercad Website</a>
+    <a href="https://www.linkedIn.com" target="_top"
+      >linkedIn Page with default target</a
+    >
+
+    <a href="//comsats.edu.pk">Visit COMSATS</a>
+
+    <hr />
+    <!-- Internal HyperLinks - eg. Breadcrumb -->
+    <a href="about.html">About Us</a>
+    <a href="./pages/contact.html">Contact Us</a>
+
+    <h1>Home Page</h1>
+    <hr />
+
+    <!-- Single Page HyperLinks/ Local Hyperlinks - eg. Bookmarks -->
+    <a href="#chap1">Chapter 1</a> <br />
+    <a href="#intro">Introduction</a> <br />
+    <a href="#litrev">Literature Review</a> <br />
+
+    <h1 id="chap1">Chapter 1</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, debitis!
+    </p>
+
+    <h2 id="intro">Introduction</h2>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae deserunt,
+      tempora tenetur recusandae dicta voluptas. Quidem, facere? Sit, labore
+      tempora veritatis non, sed, id aut quasi quod minima in ex?
+    </p>
+
+    <h2 id="litrev">Literature Review</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste et aperiam
+      similique temporibus tenetur veniam esse repellat repellendus tempora, ut,
+      libero necessitatibus eaque architecto. Possimus illo eum nam expedita
+      repellendus recusandae, iusto deserunt, dolorum quod nihil architecto
+      eligendi ex, culpa quasi voluptas natus repellat quia voluptatem? Animi
+      asperiores velit et!
+    </p>
+
+    <!-- Links to top of the page -->
+    <a href="#top"> A link for TOP OF PAGE </a>
+
+    <!-- Empty Links to top of the page -->
+    <a href="#">
+      A dummy link, not going anywhere except TOP OF THE PAGE (not navigating to
+      any other page)</a
+    >
+
+    <br /><br />
+    <!-- Linking telephone/email address -->
+    Email:
+    <a href="mailto:babarali@cuilahore.edu.pk"> babarali@cuilahore.edu.pk</a>
+    Email with CC/Subject:
+    <a
+      href="mailto:babarali@cuilahore.edu.pk?cc=nobody@cuilahore.edu.pk&subject=The%20subject%20of%20the%20Email"
+    >
+      babarali@cuilahore.edu.pk</a
+    >
+
+    Telephone: <a href="tel:00923001234567"> +923001234567 </a> <br /><br />
+    <!-- Linking with download target -->
+    <a
+      href="http://www.abc.com/downloadfile"
+      download="abc-defaultFileSaveName.exe"
+    >
+      Download here
+    </a>
+
+    <!-- Placeholder link -->
+    <a>Placeholder Anchor</a>
+
+    <!-- ######################################################### -->
+    <!-- Lists -->
+    <!-- ######################################################### -->
+    <hr />
+
+    <h4>CUI Campuses</h4>
+    <ul>
+      <li>Islamabad</li>
+      <li>Lahore</li>
+      <li>Abbotabad</li>
+      <li>and many more</li>
+    </ul>
+
+    <h4>Bachelor Degree programs in ECE</h4>
+    <ol>
+      <li>Bachelor of Science in Computer Engineering</li>
+      <li>Bachelor of Science in Electrical Engineering</li>
+    </ol>
+
+    <h4>List of Fruits</h4>
+    <!--disc, circle, square -->
+    <ul type="square">
+      <li>Orange</li>
+      <li>Banana</li>
+      <li>Mango</li>
+    </ul>
+
+    <h4>List of Ingredients in Pasta</h4>
+    <ol type="I" start="5">
+      <li>Pasta</li>
+      <li>Another pasta</li>
+      <li>Once again pasta</li>
+    </ol>
+
+    <h4>List of Acronyms</h4>
+    <dl>
+      <dt>USA</dt>
+      <dd>United States of America</dd>
+      <dt>WAPDA</dt>
+      <dd>Water and Power Development Authority</dd>
+    </dl>
+
+    <h4>Descriptions</h4>
+    <dl>
+      <dt>Data</dt>
+      <dd>- Piece of information</dd>
+      <dt>Pakistan</dt>
+      <dd>- Famous for world best footballs</dd>
+    </dl>
+
+    <!-- ######################################################### -->
+    <!-- Menu -->
+    <!-- ######################################################### -->
+    <hr />
+
+    <h4>List using Menu Tag</h4>
+    <menu>
+      <li>Orange</li>
+      <li>Banana</li>
+      <li>Mango</li>
+    </menu>
+
+    <!-- ######################################################### -->
+    <!-- Creating Navigation using <ul>, <li> and <a> tags -->
+    <!-- ######################################################### -->
+
+    <hr />
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <!-- ######################################################### -->
+    <!-- Nested Lists -->
+    <!-- ######################################################### -->
+    <hr />
+
+    <!-- APPROACH 1 -->
+    <h4>APPROACH 1</h4>
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <ul>
+        <li>Type A</li>
+        <li>Type B</li>
+      </ul>
+      <li>Item 3</li>
+    </ol>
+
+    <!-- APPROACH 2: Better Approach -->
+    <h4>APPROACH 2: Better Approach</h4>
+    <ol>
+      <li>Item 1</li>
+      <li>
+        Item 2
+        <!-- No closing tag here </li> -->
+        <ul>
+          <li>Type A</li>
+          <li>Type B</li>
+        </ul>
+        <!-- Closing tag next </li> -->
+      </li>
+      <li>Item 3</li>
+    </ol>
+  </body>
+</html>

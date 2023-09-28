@@ -1,0 +1,269 @@
+<!-- 
+*******************************************************
+Table HTML Elements
+-------------------------------------------------------
+01-     TABLE Tag <table>
+02-     TR Tag <tr>  – Table Row
+03-     TD Tag <td>  – Table Data (Cell)
+04-     TH Tag <th>  – Table Heading
+05-     TBODY Tag <tbody> 
+06-     CAPTION Tag <caption> – Title of a table
+07-     THEAD Tag <thead>
+08-     TFOOT Tag <tfoot>
+09-     COLGROUP Tag <colgroup>
+10-     COL Tag <col>  – Columns
+*******************************************************
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table HTML Elements</title>
+  </head>
+  <body>
+    <!-- ######################################################### -->
+    <!-- <table>, <td>, <tr> -->
+    <!-- ######################################################### -->
+
+    <!-- 
+        Even if you do not add <tbody> tag, it will be added automatically: 
+        See: Chrome developer tools 
+    -->
+    <table>
+      <tr>
+        <td>Sr. No.</td>
+        <td>Currency</td>
+        <td>Rate</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>USD</td>
+        <td>300</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>AUD</td>
+        <td>180</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>EURO</td>
+        <td>323</td>
+      </tr>
+    </table>
+
+    <!-- ######################################################### -->
+    <!-- <th>, <thead>, <tbody>, <caption> -->
+    <!-- ######################################################### -->
+
+    <!-- 
+        Even if you do not add <tbody> tag, it will be added automatically: 
+        See: Chrome developer tools 
+    -->
+
+    <hr />
+    <table>
+      <caption>
+        Currency Rates
+      </caption>
+      <!-- <thead> -->
+      <tr>
+        <th>Sr. No.</th>
+        <th>Currency</th>
+        <th>Rate</th>
+        <th>Trend</th>
+      </tr>
+      <!-- </thead> -->
+      <tfoot>
+        <tr>
+          <td>* Currency rates from abc exchange</td>
+        </tr>
+      </tfoot>
+      <!-- <tbody> -->
+      <tr>
+        <td>1</td>
+        <td>USD</td>
+        <td>300</td>
+        <td>Inc.</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>AUD</td>
+        <td>180</td>
+        <td>Inc.</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>EURO</td>
+        <td>323</td>
+        <td>Dec.</td>
+      </tr>
+      <!-- </tbody>        -->
+    </table>
+
+    <!-- ######################################################### -->
+    <!-- Attributes:
+         border, bordercolor, bgcolor, cellpadding, 
+         cellspacing, align, width -->
+    <!-- ######################################################### -->
+
+    <hr />
+    <!-- 
+           border = "5" bordercolor = "red" bgcolor = "yellow" 
+           cellpadding = "10" cellspacing = "20" 
+           align="center"
+           width="100%" 
+        -->
+    <table border="5" bordercolor="red" bgcolor="yellow" align="center">
+      <caption>
+        Currency Rates
+      </caption>
+      <!-- <thead> -->
+      <tr>
+        <th>Sr. No.</th>
+        <th>Currency</th>
+        <th>Rate</th>
+        <th>Trend</th>
+      </tr>
+      <!-- </thead> -->
+      <tfoot>
+        <tr>
+          <td>* Currency rates from abc exchange</td>
+        </tr>
+      </tfoot>
+      <!-- <tbody> -->
+      <tr>
+        <td>1</td>
+        <td>USD</td>
+        <td>300</td>
+        <td>Inc.</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>AUD</td>
+        <td>180</td>
+        <td>Inc.</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>EURO</td>
+        <td>323</td>
+        <td>Dec.</td>
+      </tr>
+      <!-- </tbody>        -->
+    </table>
+
+    <!-- ######################################################### -->
+    <!-- Attributes:
+         rowspan, colspan -->
+    <!-- ######################################################### -->
+
+    <hr />
+
+    <table
+      border="5"
+      bordercolor="red"
+      bgcolor="pink"
+      cellpadding="10"
+      cellspacing="20"
+      width="100%"
+    >
+      <caption>
+        Currency Rates
+      </caption>
+      <!-- <thead> -->
+      <tr>
+        <th>Sr. No.</th>
+        <th>Currency</th>
+        <th>Rate</th>
+        <th>Trend</th>
+      </tr>
+      <!-- </thead> -->
+      <tfoot>
+        <tr>
+          <td colspan="4">* Currency rates from abc exchange</td>
+        </tr>
+      </tfoot>
+      <!-- <tbody> -->
+      <tr>
+        <td>1</td>
+        <td>USD</td>
+        <td>300</td>
+        <td rowspan="2">Inc.</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>AUD</td>
+        <td>180</td>
+        <!-- <td>Inc.</td> -->
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>EURO</td>
+        <td>323</td>
+        <td>Dec.</td>
+      </tr>
+      <!-- </tbody>        -->
+    </table>
+
+    <!-- ######################################################### -->
+    <!-- <colgroup>,  <col> -->
+    <!-- ######################################################### -->
+
+    <hr />
+
+    <table
+      border="5"
+      bordercolor="red"
+      bgcolor="orange"
+      cellpadding="10"
+      cellspacing="20"
+      width="100%"
+    >
+      <caption>
+        Currency Rates
+      </caption>
+
+      <colgroup>
+        <col span="2" />
+        <col span="1" bgcolor="#3bf51d" />
+      </colgroup>
+
+      <!-- <thead> -->
+      <tr>
+        <th>Sr. No.</th>
+        <th>Currency</th>
+        <th>Rate</th>
+        <th>Trend</th>
+      </tr>
+      <!-- </thead> -->
+      <tfoot>
+        <tr>
+          <td colspan="4">* Currency rates from abc exchange</td>
+        </tr>
+      </tfoot>
+      <!-- <tbody> -->
+      <tr>
+        <td>1</td>
+        <td>USD</td>
+        <td>300</td>
+        <td rowspan="2">Inc.</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>AUD</td>
+        <td>180</td>
+        <!-- <td>Inc.</td> -->
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>EURO</td>
+        <td>323</td>
+        <td>Dec.</td>
+      </tr>
+      <!-- </tbody>        -->
+    </table>
+  </body>
+</html>

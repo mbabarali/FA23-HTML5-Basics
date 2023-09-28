@@ -1,0 +1,101 @@
+<!-- 
+*******************************************************
+Link HTML Elements
+-------------------------------------------------------
+01-     LINK Tag <link>
+02-     NAV Tag <nav> – Navigation
+03-     IFRAME Tag <iframe> – Inline Frame
+*******************************************************
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link HTML Elements</title>
+
+    <!-- ######################################################### -->
+    <!-- <link> -->
+    <!-- ######################################################### -->
+
+    <!-- favicon linking -->
+    <link rel="icon" href="comsats-icon.jpeg" />
+
+    <!-- Style sheet linking -->
+    <link rel="stylesheet" href="myStylesheet.css" />
+
+    <!-- Style sheet linking, conditionally -->
+    <link rel="stylesheet" href="standardView.css" media="all" />
+    <link rel="stylesheet" href="printView.css" media="print" />
+    <link
+      rel="stylesheet"
+      href="billboardView.css"
+      media="screen and (min-height: 500px)"
+    />
+    <!-- <link rel="stylesheet" href="desktopView.css" media="screen and (min-width: 900px)" /> -->
+    <!-- <link rel="stylesheet" href="graphicView.css" media="screen and (min-resolution: 300dpi)" /> -->
+    <!-- <link rel="stylesheet" href="landscapeView.css" media="all and (orientation: landscape)" /> -->
+  </head>
+  <body>
+    <!-- ######################################################### -->
+    <!-- <nav> -->
+    <!-- ######################################################### -->
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="http://www.google.com">Google</a></li>
+        <li><a href="http://www.youtube.com">YouTube</a></li>
+      </ul>
+    </nav>
+
+    <!-- ######################################################### -->
+    <h1>Heading One</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, est?</p>
+
+    <!-- ######################################################### -->
+    <!-- <iframe> -->
+    <!-- ######################################################### -->
+
+    <iframe src="http://www.comsats.edu.pk"></iframe>
+
+    <iframe
+      src="http://www.comsats.edu.pk"
+      frameborder="0"
+      width="1000"
+      height="1000"
+    ></iframe>
+
+    <!-- ######################################################### -->
+    <!-- <iframe> as a placeholder for <a> -->
+    <!-- ######################################################### -->
+    <hr />
+
+    <iframe
+      src="./comsats-icon.jpeg"
+      name="frame_001"
+      width="500"
+      height="500"
+    ></iframe>
+
+    <a href="http://www.cuilahore.edu.pk" target="frame_001"
+      >Go to CUI website</a
+    >
+
+    <!-- ######################################################### -->
+    <!-- <iframe> as a placeholder for video -->
+    <!-- ######################################################### -->
+    <hr />
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/B2_p3dN9je4?si=kOCgqcHawbHq4TeM"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

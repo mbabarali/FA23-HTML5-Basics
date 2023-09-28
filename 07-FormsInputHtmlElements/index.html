@@ -1,0 +1,405 @@
+<!-- 
+*******************************************************
+Forms and Input HTML Elements
+-------------------------------------------------------
+01-     INPUT Tag <input>
+02-     DATALIST Tag <datalist>
+03-     OPTION Tag <option>
+04-     LABEL Tag <label>
+05-     TEXTAREA Tag <textarea>
+06-     SELECT Tag <select>
+07-     BUTTON Tag <button>
+08-     FORM Tag <form>
+09-     FIELDSET Tag <fieldset>
+10-     LEGEND Tag <legend>
+11-     OPTGROUP Tag <optgroup>
+12-     OUTPUT Tag <output>
+*******************************************************
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms and Input HTML Elements</title>
+  </head>
+  <body>
+    <!-- ######################################################### -->
+    <!-- <input> -->
+    <!-- ######################################################### -->
+
+    <input />
+    <input type="text" />
+
+    <hr />
+    <br />
+    <!-- ######################################################### -->
+    <!-- "type" attribute for <input> -->
+    <!-- ######################################################### -->
+
+    <input type="checkbox" /> <br />
+    <input type="radio" /> <br />
+
+    <input type="button" /> <br />
+    <input type="reset" /> <br />
+    <input type="submit" /> <br />
+
+    <input type="image" /> <br />
+
+    <input type="range" /> <br />
+
+    <input type="text" /> <br />
+    <input type="password" /> <br />
+    <input type="number" /> <br />
+    <input type="tel" /> <br />
+    <input type="email" /> <br />
+    <input type="url" /> <br />
+    <input type="search" /> <br />
+
+    <input type="file" /> <br />
+
+    <input type="color" /> <br />
+
+    <input type="date" /> <br />
+    <input type="time" /> <br />
+    <input type="datetime-local" /> <br />
+    <input type="week" /> <br />
+    <input type="month" /> <br />
+
+    <input type="hidden" /> <br />
+
+    <hr />
+    <br />
+    <!-- ######################################################### -->
+    <!-- <input> with <datalist> and <option> -->
+    <!-- ######################################################### -->
+
+    Choose an item to buy? : <input list="itemsToBuy" />
+    <datalist id="itemsToBuy">
+      <option>Car</option>
+      <option>Bike</option>
+      <option>Bicycle</option>
+      <option>Jeep</option>
+      <option>SUV</option>
+      <option>Hummer</option>
+    </datalist>
+
+    <hr />
+    <br />
+    <!-- ######################################################### -->
+    <!-- <label> -->
+    <!-- ######################################################### -->
+
+    <!-- Form Control as a content/child of <label> Tag 
+         * [BINDING] Bind the form control and <label> tag -->
+    <label>
+      Interests:
+      <input type="text" />
+    </label>
+
+    <br /><br />
+    <!-- Form Control parallel to <label> Tag 
+        * [NO BINDING] No binding bwetween the form control and <label> tag-->
+    <label> User: </label>
+    <input type="text" />
+
+    <br /><br />
+    <!-- Form Control parallel to <label> Tag 
+        * [BINDING] Bind the form control and <label> tag -->
+    <label for="hobbyField"> Hobby: </label>
+    <input type="text" id="hobbyField" />
+
+    <hr />
+    <br />
+
+    <!-- ######################################################### -->
+    <!-- <textarea> -->
+    <!-- ######################################################### -->
+
+    <textarea></textarea>
+    <textarea cols="30" rows="10"></textarea>
+
+    <hr />
+    <br />
+    <!-- ######################################################### -->
+    <!-- <select>, <option> -->
+    <!-- ######################################################### -->
+
+    <select></select>
+    <select>
+      <!-- By default, the first item in the option/drop-down list is preselected -->
+      <option>Engineer</option>
+      <option>Doctor</option>
+      <option>Psycologist</option>
+      <option>Police Officer</option>
+    </select>
+
+    <select>
+      <option>Engineer</option>
+      <option>Doctor</option>
+      <!-- Customized preselected option -->
+      <option selected>Economist</option>
+      <option>Police Officer</option>
+    </select>
+
+    <hr />
+    <br />
+    <!-- ######################################################### -->
+    <!-- <button> -->
+    <!-- ######################################################### -->
+
+    <button>Submit the details</button>
+
+    <hr />
+    <br />
+    <!-- ######################################################### -->
+    <!-- <fieldset>, <legend> -->
+    <!-- ######################################################### -->
+
+    <fieldset>
+      <legend>Peronal Information</legend>
+
+      <!-- Form Control Item -->
+      Profession:
+      <select>
+        <option>Engineer</option>
+        <option>Doctor</option>
+        <!-- Customized preselected option -->
+        <option selected>Economist</option>
+        <option>Police Officer</option>
+      </select>
+
+      <br /><br />
+      <!-- Form Control Item -->
+      Number of items to buy? : <input list="itemsToBuyNo" />
+      <datalist id="itemsToBuyNo">
+        <option>1</option>
+        <option>2</option>
+        <option>5</option>
+        <option>10</option>
+        <option>20</option>
+      </datalist>
+
+      <br /><br />
+      <!-- Form Control Item -->
+      Interests: <input type="text" />
+    </fieldset>
+
+    <hr />
+    <br />
+    <!-- ######################################################### -->
+    <!-- <optgroup> -->
+    <!-- ######################################################### -->
+    Profession:
+    <select>
+      <optgroup label="Top Professionals">
+        <option>Engineer</option>
+        <option>Doctor</option>
+      </optgroup>
+      <optgroup label="Top Governers">
+        <!-- Customized preselected option -->
+        <option selected>Economist</option>
+        <option>Police Officer</option>
+      </optgroup>
+    </select>
+
+    <hr />
+    <hr />
+    <hr />
+    <!-- ***   ***   ***   ***   ***   ***   ***   ***   ***   ***  -->
+    <!-- ***   ***   ***   ***   ***   ***   ***   ***   ***   ***  -->
+    <!-- ***   ***   ***   ***   ***   ***   ***   ***   ***   ***  -->
+    <!-- ***   ***   ***   ***   ***   ***   ***   ***   ***   ***  -->
+    <!-- ***   ***   ***   ***   ***   ***   ***   ***   ***   ***  -->
+    <!--                Form Submission     -->
+    <!-- ***   ***   ***   ***   ***   ***   ***   ***   ***   ***  -->
+    <!-- ***   ***   ***   ***   ***   ***   ***   ***   ***   ***  -->
+
+    First Name: <input type="text" /> <br />
+    Surname: <input type="text" /> <br />
+    Profession: <input type="text" /> <br />
+    Telephone: <input type="tel" /> <br />
+    Email: <input type="email" /> <br />
+    Marital Status: <br />
+    <input type="radio" /> <br />
+    <input type="radio" /> <br />
+    Qualification:
+    <select>
+      <optgroup label="School Certificate">
+        <option>SSC or 10-Year-equivalent</option>
+        <option>HSSC or 12-Year-equivalent</option>
+      </optgroup>
+      <optgroup label="Degree">
+        <option>BS or 16-Year-equivalent</option>
+        <option selected>MS or 18-Year-equivalent</option>
+        <option>PhD</option>
+      </optgroup>
+    </select>
+    <br />
+    <br />
+    <input type="submit" value="Submit the form" />
+
+    <!-- ***** Adding "name" attribute ***** -->
+    <hr />
+    First Name: <input type="text" name="fname" /> <br />
+    Surname: <input type="text" name="sname" /> <br />
+    Profession: <input type="text" name="pro" /> <br />
+    Telephone: <input type="tel" name="tel" /> <br />
+    Email: <input type="email" name="email" /> <br />
+    Marital Status: <br />
+    <input type="radio" name="maritalStatus" /> <br />
+    <input type="radio" name="maritalStatus" /> <br />
+    Qualification:
+    <select name="qual">
+      <optgroup label="School Certificate">
+        <option>SSC or 10-Year-equivalent</option>
+        <option>HSSC or 12-Year-equivalent</option>
+      </optgroup>
+      <optgroup label="Degree">
+        <option>BS or 16-Year-equivalent</option>
+        <option selected>MS or 18-Year-equivalent</option>
+        <option>PhD</option>
+      </optgroup>
+    </select>
+    <br />
+    <br />
+    <input type="submit" value="Submit the form" />
+
+    <!-- ***** Adding <form> tag ***** -->
+    <hr />
+    <form action="/submit">
+      First Name: <input type="text" name="fname" /> <br />
+      Surname: <input type="text" name="sname" /> <br />
+      Profession: <input type="text" name="pro" /> <br />
+      Telephone: <input type="tel" name="tel" /> <br />
+      Email: <input type="email" name="email" /> <br />
+      Marital Status: <br />
+      <input type="radio" name="maritalStatus" /> <br />
+      <input type="radio" name="maritalStatus" /> <br />
+      Qualification:
+      <select name="qual">
+        <optgroup label="School Certificate">
+          <option>SSC or 10-Year-equivalent</option>
+          <option>HSSC or 12-Year-equivalent</option>
+        </optgroup>
+        <optgroup label="Degree">
+          <option>BS or 16-Year-equivalent</option>
+          <option selected>MS or 18-Year-equivalent</option>
+          <option>PhD</option>
+        </optgroup>
+      </select>
+      <br />
+      <br />
+      <input type="submit" value="Submit the form" />
+    </form>
+
+    <!-- ***** Adding "value" attribute and <label> in Radio Boxes ***** -->
+    <hr />
+    <form action="/submit">
+      First Name: <input type="text" name="fname" /> <br />
+      Surname: <input type="text" name="sname" /> <br />
+      Profession: <input type="text" name="pro" /> <br />
+      Telephone: <input type="tel" name="tel" /> <br />
+      Email: <input type="email" name="email" /> <br />
+      Marital Status: <br />
+      <input type="radio" name="maritalStatus" value="yes" />
+      <label>Married</label><br />
+      <input type="radio" name="maritalStatus" value="no" />
+      <label>Unmarried</label><br />
+      Qualification:
+      <select name="qual">
+        <optgroup label="School Certificate">
+          <option>SSC or 10-Year-equivalent</option>
+          <option>HSSC or 12-Year-equivalent</option>
+        </optgroup>
+        <optgroup label="Degree">
+          <option>BS or 16-Year-equivalent</option>
+          <option selected>MS or 18-Year-equivalent</option>
+          <option>PhD</option>
+        </optgroup>
+      </select>
+      <br />
+      <br />
+      <input type="submit" value="Submit the form" />
+    </form>
+
+    <!-- ***** Adding "id" attribute in Radio Boxes to bind <label> ***** -->
+    <hr />
+    <form action="/submit">
+      First Name: <input type="text" name="fname" /> <br />
+      Surname: <input type="text" name="sname" /> <br />
+      Profession: <input type="text" name="pro" /> <br />
+      Telephone: <input type="tel" name="tel" /> <br />
+      Email: <input type="email" name="email" /> <br />
+      Marital Status: <br />
+      <input type="radio" name="maritalStatus" value="yes" id="married" />
+      <label for="married">Married</label><br />
+      <input type="radio" name="maritalStatus" value="no" id="unmarried" />
+      <label for="unmarried">Unmarried</label><br />
+      Qualification:
+      <select name="qual">
+        <optgroup label="School Certificate">
+          <option>SSC or 10-Year-equivalent</option>
+          <option>HSSC or 12-Year-equivalent</option>
+        </optgroup>
+        <optgroup label="Degree">
+          <option>BS or 16-Year-equivalent</option>
+          <option selected>MS or 18-Year-equivalent</option>
+          <option>PhD</option>
+        </optgroup>
+      </select>
+      <br />
+      <br />
+      <input type="submit" value="Submit the form" />
+      <!-- <button type="submit">"Submit the form"</button> -->
+    </form>
+
+    <!-- ######################################################### -->
+    <!-- action, method, name, target and novalidate attributes 
+        of a <form> html element -->
+    <!-- ######################################################### -->
+
+    <!-- Try Yourself -->
+
+    <!-- ######################################################### -->
+    <!-- Attribute for <input>: name, value, size, maxlength, 
+        autofocus, placeholder, required, disabled -->
+    <!-- ######################################################### -->
+
+    <!-- Try Yourself -->
+
+    <hr />
+    <br />
+    <!-- ######################################################### -->
+    <!-- "autocomplete" attribute of <input> and <form> -->
+    <!-- ######################################################### -->
+    <label> User: </label>
+    <input type="text" autocomplete="name" />
+
+    <br /><br />
+    <form action="---" autocomplete="off">
+      <label> User: </label>
+      <input type="text" autocomplete="name" />
+    </form>
+
+    <hr />
+    <br />
+    <!-- ######################################################### -->
+    <!-- <form> and <output> -->
+    <!-- ######################################################### -->
+    <form
+      action="/output"
+      oninput="varC.value=parseInt(a.value)+parseInt(b.value)"
+    >
+      <input name="varA" type="range" id="a" value="50" />
+      +<input name="varB" type="number" id="b" value="25" /> =<output
+        name="varC"
+        for="a b"
+        >75</output
+      >
+      (view only)
+      <input type="submit" value="Submit the form" />
+    </form>
+  </body>
+</html>

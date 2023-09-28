@@ -1,0 +1,234 @@
+<!-- 
+*******************************************************
+Images and Multimedia HTML Elements
+-------------------------------------------------------
+01-     IMG Tag <img>
+02-     MAP Tag <map>
+03-     AREA Tag <area>
+04-     FIGURE Tag <figure>
+05-     FIGCAPTION Tag   <figcaption>
+06-     CANVAS Tag <canvas>
+07-     PICTURE TAG <picture>
+08-     AUDIO Tag <audio>
+09-     VIDEO Tag <video>
+10-     SOURCE Tag <source>
+11-     TRACK Tag <track>
+*******************************************************
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imges and Multimedia HTML Elements</title>
+  </head>
+  <body>
+    <!-- ######################################################### -->
+    <!-- <img> -->
+    <!-- ######################################################### -->
+
+    <!-- Local - Same Directory -->
+    <img src="CUI-Logo.jpg" alt="COMSATS University Logo" />
+    <img src="CUI-ABgap.jpg" alt="COMSATS Lahore" />
+
+    <!-- Local - Different Directory -->
+    <img src="./images/Royal_mosque_Lahore.jpg" alt="Badshahi Mosque" />
+
+    <!-- Remote from Other Website -->
+    <img
+      src="https://cdn.thecollector.com/wp-content/uploads/2023/04/eiffel-tower-incredible-facts.jpg?width=750&quality=70"
+      alt="Eiffel Tower Paris"
+    />
+
+    <!-- ######################################################### -->
+    <!-- Attributes <img>: width, Height, title -->
+    <!-- ######################################################### -->
+
+    <br />
+    <br />
+
+    <img
+      src="./CUI-ISB-HighQuality.jpg"
+      title="Stunning view of COMSATS Islamabad"
+      width="900px"
+    />
+
+    <img
+      src="./CUI-ISB-HighQuality.jpg"
+      title="Stunning view of COMSATS Islamabad"
+      width="900px"
+      height="900px"
+    />
+
+    <!-- ######################################################### -->
+    <!-- Linking an image for navigation -->
+    <!-- ######################################################### -->
+
+    <a href="https://comsats.edu.pk/" target="_blank"
+      ><img src="./CUI-Logo.jpg" alt="CUI-ISB with a link"
+    /></a>
+
+    <!-- ######################################################### -->
+    <!-- <map>, <area> -->
+    <!-- ######################################################### -->
+    <hr />
+    <br />
+
+    <!-- **** ORIGINAL SIZE of IMAGE **** -->
+    <img
+      src="./studyRoom.jpg"
+      alt="Study Room"
+      usemap="#studyRoomMap_original"
+    />
+
+    <br />
+    Credit:
+    <a
+      href="https://www.freepik.com/free-vector/office-workplace-background_5685572.htm#query=study%20room&position=1&from_view=search&track=ais"
+      >Image by gstudioimagen</a
+    >
+    on Freepik
+
+    <map name="studyRoomMap_original">
+      <area
+        shape="rect"
+        coords="4800,1345,6130,3377"
+        href="http://google.com"
+        alt="bookRack"
+      />
+      <area
+        shape="rect"
+        coords="2400,777,3986,2362"
+        href="http://google.com"
+        alt="window"
+      />
+      <area
+        shape="circle"
+        coords="1628,1080,308"
+        href="http://google.com"
+        alt="clock"
+      />
+    </map>
+
+    <!-- **** SCALED SIZE of IMAGE **** -->
+    <hr />
+    <!-- SCALED IMAGE::
+         WHEN width attr is mensioned only AND The height attr is not mensioned. -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!-- height_new = width_new * height_original / width_original -->
+    <!-- y_new = y_original * height_new / height_original -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!-- x_new = x_original * width_new / width_original -->
+    <!-- y_new = y_original * width_new * width_original -->
+
+    <img
+      src="./studyRoom.jpg"
+      alt="Study Room"
+      usemap="#studyRoomMap_scaled"
+      width="1000"
+    />
+    <br />
+    Credit:
+    <a
+      href="https://www.freepik.com/free-vector/office-workplace-background_5685572.htm#query=study%20room&position=1&from_view=search&track=ais"
+      >Image by gstudioimagen</a
+    >
+    on freepik
+
+    <map name="studyRoomMap_scaled">
+      <area
+        shape="rect"
+        coords="755,211,964,531"
+        href="http://google.com"
+        alt="bookRack"
+      />
+      <area
+        shape="rect"
+        coords="377,122,627,371"
+        href="http://google.com"
+        alt="window"
+      />
+      <area
+        shape="circle"
+        coords="265,170,48"
+        href="http://google.com"
+        alt="clock"
+      />
+    </map>
+
+    <br />
+    <hr />
+    <!-- ######################################################### -->
+    <!-- Hyperlinks using <a> and <img>-->
+    <!-- ######################################################### -->
+
+    <a href="//facebook.com">
+      <img src="./images/iconmonstr-facebook-1.svg" alt="facebook icon"
+    /></a>
+
+    <!-- ######################################################### -->
+    <!-- <figure>, <figcaption> -->
+    <!-- ######################################################### -->
+    <hr />
+    <br />
+
+    <figure>
+      <img src="./images/Royal_mosque_Lahore.jpg" alt="Badshahi Mosque" />
+      <figcaption>COMSATS Islamabad</figcaption>
+    </figure>
+
+    <hr />
+    <figure>
+      <figcaption>A short note on trip</figcaption>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo
+        vero, architecto quam minima sint praesentium, cum natus quae,
+        perferendis nihil nobis corporis necessitatibus debitis id accusamus at
+        eum voluptatem voluptate! Cumque possimus qui tenetur nihil accusantium
+        aliquid saepe, nostrum, voluptatibus illum eum similique suscipit autem
+        tempora cupiditate iste, officiis eius.
+      </p>
+    </figure>
+
+    <!-- ######################################################### -->
+    <!-- <canvas> -->
+    <!-- ######################################################### -->
+    <hr />
+    <br />
+
+    <!-- ######################################################### -->
+    <!-- <picture>, <audio>, <video>, <source>, <track> -->
+    <!-- ######################################################### -->
+    <hr />
+    <br />
+
+    <!-- Images Depending on Viewport -->
+    <picture>
+      <source srcset="a.jpg" media="(max-width: 600px)" />
+      <source srcset="b.jpg" media="(max-width: 1500px)" />
+      <source srcset="c.jpg" />
+      <img src="d.jpg" alt="Flowers" />
+    </picture>
+
+    <video
+      src="./videos/pexels_videos_2616637 (540p).mp4"
+      width="500"
+      height="500"
+      controls
+      autoplay
+    ></video>
+
+    <video width="500" height="500" controls autoplay>
+      ]
+      <source
+        src="./videos/pexels_videos_2616637 (540p).mpeg"
+        type="video/mpeg"
+      />
+      <source
+        src="./videos/pexels_videos_2616637 (540p).mp4"
+        type="video/mp4"
+      />
+    </video>
+  </body>
+</html>
